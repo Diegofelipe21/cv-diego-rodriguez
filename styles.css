@@ -38,7 +38,7 @@ footer {
     padding: 10px;
     background-color: #0073e6;
     color: #fff;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -57,3 +57,4 @@ footer {
         padding: 15px;
     }
 }
+
