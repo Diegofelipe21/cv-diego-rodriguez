@@ -32,6 +32,38 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+section#contacto {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#contacto h3 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 10px;
+}
+
+section#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#contacto li {
+    margin-bottom: 10px;
+}
+
+section#contacto a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+section#contacto a:hover {
+    text-decoration: underline;
+}
+
+
 main {
     flex: 1;
 }
