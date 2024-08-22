@@ -18,10 +18,10 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3em; /* Aumenté el tamaño de la letra */
     opacity: 0;
     transform: translateX(-100%);
-    animation: slide-in 1s forwards ease-in-out;
+    animation: slide-in 2s forwards ease-in-out; /* La animación ahora es más lenta */
 }
 
 @keyframes slide-in {
