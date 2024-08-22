@@ -21,11 +21,15 @@ header h1 {
     font-size: 2em;
     opacity: 0;
     transform: translateX(-100%);
-    animation: slide-in 1s forwards;
+    animation: slide-in 1s forwards ease-in-out;
 }
 
 @keyframes slide-in {
-    to {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
