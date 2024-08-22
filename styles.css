@@ -7,42 +7,57 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
-
 
 header {
     background-color: #0073e6;
     color: #fff;
     padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    font-size: 2em;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px 100px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-section#contacto {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-section#contacto h3 {
+h3 {
     border-bottom: 2px solid #0073e6;
     padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
 section#contacto ul {
@@ -61,26 +76,6 @@ section#contacto a {
 
 section#contacto a:hover {
     text-decoration: underline;
-}
-
-
-main {
-    flex: 1;
-}
-
-h3 {
-    border-bottom: 2px solid #0073e6;
-    padding-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #0073e6;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
 
 @media (max-width: 768px) {
