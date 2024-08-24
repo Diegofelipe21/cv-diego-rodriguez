@@ -1,5 +1,8 @@
 // scripts.js
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Agrega aquí alguna funcionalidad adicional si es necesario.
-});
+function toggleLanguage() {
+    const englishSections = document.querySelectorAll('.english');
+    const spanishSections = document.querySelectorAll('.spanish');
+    englishSections.forEach(section => section.classList.toggle('hidden'));
+    spanishSections.forEach(section => section.classList.toggle('hidden'));
+}
