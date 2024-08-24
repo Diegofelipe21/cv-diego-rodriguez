@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -10,35 +9,37 @@ body {
 }
 
 header {
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #007bff;
+    color: white;
     padding: 20px;
     text-align: center;
-    overflow: hidden;
+    position: relative;
 }
 
-header h1 {
-    font-size: 3em;
-    opacity: 0;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: slide-in 1s ease-out forwards;
     transform: translateX(-100%);
-    animation: slide-in 2s forwards ease-in-out; 
+    opacity: 0;
+}
+
+h2 {
+    margin-top: 10px;
 }
 
 @keyframes slide-in {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
     100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
+/* Sección de contenido */
 section {
     padding: 20px;
     margin: 20px 100px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -49,51 +50,56 @@ section:hover {
 }
 
 h3 {
-    border-bottom: 2px solid #0073e6;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
     font-size: 1.5em;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #0073e6;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-section#contacto ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-section#contacto li {
+li {
     margin-bottom: 10px;
 }
 
-section#contacto a {
-    color: #0073e6;
+a {
+    color: #007bff;
     text-decoration: none;
 }
 
-section#contacto a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
 
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
+/* Botón de cambio de idioma */
+#language-toggle {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
 
-    header {
-        padding: 15px;
-    }
+#language-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Clase para ocultar secciones */
+.hidden {
+    display: none;
 }
 
