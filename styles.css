@@ -38,11 +38,12 @@ h2 {
 /* Sección de contenido */
 section {
     padding: 20px;
-    margin: 20px 100px;
+    margin: 20px auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    max-width: 800px; /* Limitando el ancho máximo */
 }
 
 section:hover {
@@ -55,9 +56,16 @@ h3 {
     font-size: 1.5em;
 }
 
+/* Personalización de la lista con viñeta "➢" */
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+ul li::before {
+    content: "➢";
+    color: #007bff;
+    margin-right: 10px;
 }
 
 li {
@@ -103,3 +111,78 @@ footer {
     display: none;
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    #language-toggle {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #language-toggle {
+        font-size: 0.8em;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #language-toggle {
+        font-size: 0.7em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    section {
+        margin: 5px;
+        padding: 8px;
+    }
+
+    #language-toggle {
+        font-size: 0.6em;
+        padding: 5px 10px;
+    }
+}
