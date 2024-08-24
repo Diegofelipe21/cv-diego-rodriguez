@@ -5,96 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Felipe Rodríguez - CV</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleLanguage() {
+            const englishSections = document.querySelectorAll('.english');
+            const spanishSections = document.querySelectorAll('.spanish');
+            englishSections.forEach(section => section.classList.toggle('hidden'));
+            spanishSections.forEach(section => section.classList.toggle('hidden'));
+        }
+    </script>
+    <style>
+        .hidden {
+            display: none;
+        }
+        /* Optional: Add styles for the toggle button */
+        #language-toggle {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #language-toggle:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Diego Felipe Rodríguez</h1>
-        <h2>Administrador de Empresas</h2>
+        <h1 class="slide-in">Diego Felipe Rodríguez</h1>
+        <h2 class="english hidden">Business Administrator</h2>
+        <h2 class="spanish">Administrador de Empresas</h2>
+        <button id="language-toggle" onclick="toggleLanguage()">Inglés / Español</button>
     </header>
 
-    <section id="perfil">
-        <h3>Perfil Profesional</h3>
-        <p>Profesional en Administración de Empresas de la Universidad de Bogotá Jorge Tadeo Lozano, con especialización en Gerencia de Mercadeo y 5 años de experiencia en la gestión integral de empresas. Especializado en la optimización de recursos y la mejora de procesos operativos, con un conocimiento directivo sólido en todas las áreas de la empresa. Esta experiencia me permite integrar de manera efectiva estrategias comerciales con una administración eficiente de recursos. Reconocido por mi capacidad para liderar equipos multidisciplinarios, gestionar operaciones financieras y asegurar el cumplimiento normativo, siempre orientado hacia el crecimiento sostenible y la competitividad en mercados dinámicos. Comprometido con la innovación y la mejora continua, estoy enfocado en aportar mi experiencia en un entorno que valore el liderazgo proactivo y la visión estratégica.  </p>
+    <!-- Profile Section -->
+    <section id="profile">
+        <h3 class="english hidden">Professional Profile</h3>
+        <h3 class="spanish">Perfil Profesional</h3>
+        <p class="english hidden">Business Administration professional from the Universidad de Bogotá Jorge Tadeo Lozano, with a specialization in Marketing Management and 5 years of experience in comprehensive business management. Specialized in resource optimization and operational process improvement, with solid managerial knowledge in all areas of the company. This experience allows me to effectively integrate commercial strategies with efficient resource management. Recognized for my ability to lead multidisciplinary teams, manage financial operations, and ensure regulatory compliance, always oriented towards sustainable growth and competitiveness in dynamic markets. Committed to innovation and continuous improvement, I am focused on contributing my experience in an environment that values proactive leadership and strategic vision.</p>
+        <p class="spanish">Profesional en Administración de Empresas de la Universidad de Bogotá Jorge Tadeo Lozano, con especialización en Gerencia de Mercadeo y 5 años de experiencia en la gestión integral de empresas. Especializado en la optimización de recursos y la mejora de procesos operativos, con un conocimiento directivo sólido en todas las áreas de la empresa. Esta experiencia me permite integrar de manera efectiva estrategias comerciales con una administración eficiente de recursos. Reconocido por mi capacidad para liderar equipos multidisciplinarios, gestionar operaciones financieras y asegurar el cumplimiento normativo, siempre orientado hacia el crecimiento sostenible y la competitividad en mercados dinámicos. Comprometido con la innovación y la mejora continua, estoy enfocado en aportar mi experiencia en un entorno que valore el liderazgo proactivo y la visión estratégica.</p>
     </section>
 
-    <section id="experiencia">
-        <h3>Experiencia</h3>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h3 class="english hidden">Experience</h3>
+        <h3 class="spanish">Experiencia</h3>
         <ul>
-            <li>Gestión financiera estratégica</li>
-            <li>Liderazgo y gestión de equipos</li>
-            <li>Planificación estratégica y organizacional</li>
-            <li>Adaptabilidad y flexibilidad</li>
-            <li>Habilidades de comunicación</li>
+            <li class="english hidden">Strategic financial management</li>
+            <li class="spanish">Gestión financiera estratégica</li>
+            <li class="english hidden">Team leadership and management</li>
+            <li class="spanish">Liderazgo y gestión de equipos</li>
+            <li class="english hidden">Strategic and organizational planning</li>
+            <li class="spanish">Planificación estratégica y organizacional</li>
+            <li class="english hidden">Adaptability and flexibility</li>
+            <li class="spanish">Adaptabilidad y flexibilidad</li>
+            <li class="english hidden">Communication skills</li>
+            <li class="spanish">Habilidades de comunicación</li>
         </ul>
     </section>
 
-    <section id="habilidades">
-        <h3>Habilidades Técnicas</h3>
+    <!-- Technical Skills Section -->
+    <section id="technical-skills">
+        <h3 class="english hidden">Technical Skills</h3>
+        <h3 class="spanish">Habilidades Técnicas</h3>
         <ul>
-            <li>Manejo de software de gestión empresarial (ERP)</li>
-            <li>Contabilidad y finanzas: Análisis de EEFF, elaboración de presupuestos</li>
-            <li>Excel avanzado</li>
-            <li>Gestión de proyectos (Microsoft Project)</li>
-            <li>Análisis de datos: Power BI</li>
-            <li>Conocimientos en normativa legal y tributaria</li>
+            <li class="english hidden">Enterprise resource planning (ERP) software management</li>
+            <li class="spanish">Manejo de software de gestión empresarial (ERP)</li>
+            <li class="english hidden">Accounting and finance: Financial statement analysis, budget preparation</li>
+            <li class="spanish">Contabilidad y finanzas: Análisis de EEFF, elaboración de presupuestos</li>
+            <li class="english hidden">Advanced Excel</li>
+            <li class="spanish">Excel avanzado</li>
+            <li class="english hidden">Project management (Microsoft Project)</li>
+            <li class="spanish">Gestión de proyectos (Microsoft Project)</li>
+            <li class="english hidden">Data analysis: Power BI</li>
+            <li class="spanish">Análisis de datos: Power BI</li>
+            <li class="english hidden">Legal and tax regulatory knowledge</li>
+            <li class="spanish">Conocimientos en normativa legal y tributaria</li>
         </ul>
     </section>
 
-    <section id="experiencia-laboral">
-        <h3>Experiencia Laboral</h3>
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <h3 class="english hidden">Work Experience</h3>
+        <h3 class="spanish">Experiencia Laboral</h3>
         <div>
-            <h4>ARmontajes SAS - Director administrativo y cofundador</h4>
-            <p>Diseño y aplicación de planes estratégicos que impulsen el crecimiento y la sostenibilidad de la empresa. Supervisión de la gestión financiera, incluyendo la elaboración de presupuestos, análisis de rentabilidad y la optimización de recursos, asegurando que las decisiones se alineen con los objetivos a largo plazo y la estabilidad económica de la organización. Gracias a estas estrategias se logró un crecimiento superior del 80% respecto del año 2021 al 2022. </p>
+            <h4 class="english hidden">ARmontajes SAS - Administrative Director and Co-founder</h4>
+            <h4 class="spanish">ARmontajes SAS - Director administrativo y cofundador</h4>
+            <p class="english hidden">Design and implementation of strategic plans that drive the company's growth and sustainability. Oversight of financial management, including budgeting, profitability analysis, and resource optimization, ensuring that decisions align with the organization's long-term goals and economic stability. Thanks to these strategies, a growth of over 80% was achieved from 2021 to 2022.</p>
+            <p class="spanish">Diseño y aplicación de planes estratégicos que impulsen el crecimiento y la sostenibilidad de la empresa. Supervisión de la gestión financiera, incluyendo la elaboración de presupuestos, análisis de rentabilidad y la optimización de recursos, asegurando que las decisiones se alineen con los objetivos a largo plazo y la estabilidad económica de la organización. Gracias a estas estrategias se logró un crecimiento superior del 80% respecto del año 2021 al 2022.</p>
         </div>
         <div>
-            <h4>Fit your food - Director administrativo y cofundador</h4>
-            <p>Creador de una empresa de alimentación saludable enfocada en deportistas, encargado de la administración y búsqueda de nuevos clientes. Creación de estrategias de marketing mix y comerciales alineadas a un presupuesto general. </p>
+            <h4 class="english hidden">Fit your food - Administrative Director and Co-founder</h4>
+            <h4 class="spanish">Fit your food - Director administrativo y cofundador</h4>
+            <p class="english hidden">Creator of a healthy food company focused on athletes, responsible for administration and customer acquisition. Developed marketing mix and commercial strategies aligned with an overall budget.</p>
+            <p class="spanish">Creador de una empresa de alimentación saludable enfocada en deportistas, encargado de la administración y búsqueda de nuevos clientes. Creación de estrategias de marketing mix y comerciales alineadas a un presupuesto general.</p>
         </div>
         <div>
-            <h4>Bioquifar pharmaceutica S.A. y Anglopharma S.A. - Analista de marketing</h4>
-            <p>Encargado del diseño, ejecución y control de estrategias de mercadeo, trabajando con la fuerza de ventas para alinear el departamento de mercadeo con la misión de todas las empresas.</p>
+            <h4 class="english hidden">Bioquifar Pharmaceutica S.A. & Anglopharma S.A. - Marketing Analyst</h4>
+            <h4 class="spanish">Bioquifar pharmaceutica S.A. y Anglopharma S.A. - Analista de marketing</h4>
+            <p class="english hidden">In charge of designing, executing, and controlling marketing strategies, working with the sales force to align the marketing department with the mission of all companies.</p>
+            <p class="spanish">Encargado del diseño, ejecución y control de estrategias de mercadeo, trabajando con la fuerza de ventas para alinear el departamento de mercadeo con la misión de todas las empresas.</p>
         </div>
     </section>
 
-    <section id="educacion">
-        <h3>Educación</h3>
-        <p>Especialización en Gerencia de Mercadeo - Universidad Jorge Tadeo Lozano, Diciembre 2019</p>
-        <p>Administración de Empresas - Universidad Jorge Tadeo Lozano, Diciembre 2018</p>
+    <!-- Education Section -->
+    <section id="education">
+        <h3 class="english hidden">Education</h3>
+        <h3 class="spanish">Educación</h3>
+        <p class="english hidden">Specialization in Marketing Management - Universidad Jorge Tadeo Lozano, December 2019</p>
+        <p class="spanish">Especialización en Gerencia de Mercadeo - Universidad Jorge Tadeo Lozano, Diciembre 2019</p>
+        <p class="english hidden">Business Administration - Universidad Jorge Tadeo Lozano, December 2018</p>
+        <p class="spanish">Administración de Empresas - Universidad Jorge Tadeo Lozano, Diciembre 2018</p>
     </section>
 
-    <section id="cursos">
-        <h3>Cursos</h3>
+    <!-- Courses Section -->
+    <section id="courses">
+        <h3 class="english hidden">Courses</h3>
+        <h3 class="spanish">Cursos</h3>
         <ul>
-            <li>NEUROCAMPUS 2017 - Neuromarketing Aplicado, Universidad El Bosque, Bogotá DC. (4 Horas)</li>
-            <li>Dirección y liderazgo comercial – Universidad Pontificia Bolivariana, Medellín (32 horas, 2024)</li>
-            <li>Inteligencia artificial y productividad – Santander Open academy (8 horas, 2024)</li>
+            <li class="english hidden">NEUROCAMPUS 2017 - Applied Neuromarketing, Universidad El Bosque, Bogotá DC. (4 hours)</li>
+            <li class="spanish">NEUROCAMPUS 2017 - Neuromarketing Aplicado, Universidad El Bosque, Bogotá DC. (4 Horas)</li>
+            <li class="english hidden">Commercial Management and Leadership – Universidad Pontificia Bolivariana, Medellín (32 hours, 2024)</li>
+            <li class="spanish">Dirección y liderazgo comercial – Universidad Pontificia Bolivariana, Medellín (32 horas, 2024)</li>
+            <li class="english hidden">Artificial Intelligence and Productivity – Santander Open Academy (8 hours, 2024)</li>
+            <li class="spanish">Inteligencia artificial y productividad – Santander Open academy (8 horas, 2024)</li>
         </ul>
     </section>
 
-    <section id="idiomas">
-        <h3>Idiomas</h3>
+    <!-- Languages Section -->
+    <section id="languages">
+        <h3 class="english hidden">Languages</h3>
+        <h3 class="spanish">Idiomas</h3>
         <ul>
-            <li>Inglés B2 (Pre avanzado) - EC Los Angeles, EE. UU.</li>
-            <li>Español (Nativo)</li>
+            <li class="english hidden">English B2 (Upper Intermediate) - EC Los Angeles, USA</li>
+            <li class="spanish">Inglés B2 (Pre avanzado) - EC Los Angeles, EE. UU.</li>
+            <li class="english hidden">Spanish (Native)</li>
+            <li class="spanish">Español (Nativo)</li>
         </ul>
     </section>
 
-    <section id="contacto">
-        <h3>Contacto</h3>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3 class="english hidden">Contact</h3>
+        <h3 class="spanish">Contacto</h3>
         <ul>
-            <li>Email: <a href="mailto:diego.rodriguezj0293@gmail.com">diego.rodriguezj0293@gmail.com</a></li>
-            <li>Teléfono: +57 302 415 7177</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/" target="_blank">linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/</a></li>
-            <li>Ubicación: El Retiro, Antioquia</li>
+            <li class="english hidden">Email: <a href="mailto:diego.rodriguezj0293@gmail.com">diego.rodriguezj0293@gmail.com</a></li>
+            <li class="spanish">Email: <a href="mailto:diego.rodriguezj0293@gmail.com">diego.rodriguezj0293@gmail.com</a></li>
+            <li class="english hidden">Phone: +57 302 415 7177</li>
+            <li class="spanish">Teléfono: +57 302 415 7177</li>
+            <li class="english hidden">LinkedIn: <a href="https://www.linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/" target="_blank">linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/</a></li>
+            <li class="spanish">LinkedIn: <a href="https://www.linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/" target="_blank">linkedin.com/in/diego-felipe-rodriguez-jaramillo-292b76128/</a></li>
+            <li class="english hidden">Location: Bogotá, Colombia</li>
+            <li class="spanish">Ubicación: Bogotá, Colombia</li>
         </ul>
     </section>
 
     <footer>
         <p>Diego Felipe Rodríguez - 2024</p>
-        
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
-
